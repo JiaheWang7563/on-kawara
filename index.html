@@ -1,5 +1,4 @@
-<script src = https:"//momentjs.com/downloads/moment-with-locales.js"> </script>
-
+<script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
 <script>
 
 function onKawara (){
@@ -9,18 +8,8 @@ function onKawara (){
   document.body.style.justifyContent = 'center'
   document.body.style.height='100vw'
   
- const months = ['Jan','Feb','Mar','April','May','June',
-                  'July','Aug','Sept','Oct','Nov','Dec'] 
- 
-  const d = new Date()
-  const day = d.getDate()
-  const year = d.getFullYear()
-  const m = d.getMonth()
-  const month = months[m]
-  
-  
   const div = document.createElement('div')
-  div.textContent = moment().format('MM DD YYYY')
+  div.textContent = moment().format('MMM DD, YYYY')
   div.style.color = 'white'
   div.style.fontSize = '10vw'
   div.style.fontFamily='Futura'
